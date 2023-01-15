@@ -41,29 +41,16 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
 
-    city = ''
-    month = ''
-    day= ''
+    city, month, day = '', '', ''
 
-    print('\nHello! Let\'s explore some US bikeshare data!')
-
-    # Validate the city of study
-    userInput = valid_entry("\nEnter the name of the city of Study ", cities)
-    city = userInput.title()
+    city = valid_entry("\nEnter the name of the city of Study ", cities).title()
     print("\nYou select {}, let's select the month\n".format(city))
 
-
-    # Validate the months of study
-    userInput = valid_entry("\nEnter the month of Study ", months)
-    month = userInput.title()
+    month = valid_entry("\nEnter the month of Study ", months).title()
     print("\nYou select {}, let's select the week day now\n".format(month))
 
-
-    # Validate the day of the week
-    userInput = valid_entry("\nEnter the day of week ", week_days)
-    day = userInput.title()
+    day = valid_entry("\nEnter the day of week ", week_days).title()
     print("\nYou select {}, let's select see the results now\n".format(day))
-
 
     print('-'*40)
     return city, month, day
