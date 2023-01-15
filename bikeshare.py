@@ -31,6 +31,7 @@ def valid_entry(msg, valid_ans):
 
     return ans
 
+# user input (cities selection)
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -69,7 +70,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+# take the user input and load the file matching the selection from user
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -108,7 +109,7 @@ def load_data(city, month, day):
 
     return df
 
-
+# Receives pandas dataframe as argument and display some qustions
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -130,7 +131,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# receives pandas dataframe and display some station qustions
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -154,7 +155,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# Receives pandas dataframe and display some trip question
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -172,7 +173,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# Receives pandas dataframe and display some user qustions
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -211,7 +212,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-    #Display data from the panda series
+# Display data from the panda series
 def show_data(df):
 
     view_data = valid_entry('\nWould you like to view 5 rows of individual trip data? Enter from: ', yes_no)
