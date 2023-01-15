@@ -12,7 +12,7 @@ The user select three cites from United states (chicago, new york city and washi
 2 - Popular stations and trip
 3 - Trip duration
 4 - User info
-5 - Data from the database
+5 - Data from the csv files
 
 ### Files used
 bikeshare.py
@@ -23,9 +23,10 @@ https://git-scm.com/docs
 
 
 ### List of what software, firmware and hardware you may require
-You require to install pandas and numpy
+You require to install pandas and numpy!
 
 ### Installation instructions for the software and firmware
 To install pandas and numpy you should use:
-pip install pandas
-pip install numpy
+the the commands bellow on your pyhton ide or python distribution platform (ex: anaconda, pycharm)
+ - pip install pandas
+ - pip install numpy
