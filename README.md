@@ -18,7 +18,9 @@ The user select three cites from United states (chicago, new york city and washi
 bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://reflectoring.io/github-fork-and-pull/
+https://git-scm.com/docs
+
 
 ### List of what software, firmware and hardware you may require
 You require to install pandas and numpy
