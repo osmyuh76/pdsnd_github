@@ -20,16 +20,14 @@ yes_no = ('Yes','No')
 
 # Validate all the user inputs
 def valid_entry(msg, valid_ans):
-    user_input = input(msg + ' '+ str(valid_ans) + ': ')
-
-    while user_input.title() not in valid_ans:
-        print("\nThe option {} is not valid, let's try again!".format(user_input))
-
-        user_input = input(msg + str(valid_ans) + ": " ).title()
-
-    ans = user_input.title()
-
-    return ans
+    while True:
+        try:
+            user_input = input(msg + ' '+ str(valid_ans) + ': ')
+            if user_input.title() in valid_ans:
+                return user_input.title()
+            print("\nThe option {} is not valid, let's try again!".format(user_input))
+        except ValueError:
+            print("\nInvalid input, please enter a valid option.")
 
 # user input (cities selection)
 def get_filters():
